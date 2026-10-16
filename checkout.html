@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Checkout | AJ Bags</title>
+    <meta name="description" content="Secure checkout page for purchasing eco-friendly and sustainable bags from AJ Bags.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://ij-d-zoro.github.io/project-ajbags/checkout.html">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Noto+Serif:wght@500;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Pure Vanilla Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="ajbags_js.js"></script>
+</head>
+
+<body>
+    <!-- TopNavBar -->
+    <nav class="site-nav">
+        <div class="site-nav__container">
+            <a class="site-nav__logo" href="index.html">AJ Bags</a>
+            <div class="site-nav__links">
+                <a class="site-nav__link" href="index.html">Home</a>
+                <a class="site-nav__link" href="products.html">Products</a>
+                <a class="site-nav__link" href="aboutus.html">About Us</a>
+                <a class="site-nav__link" href="Contacts.html">Contact Us</a>
+            </div>
+            <div class="site-nav__actions">
+                <a href="favourite.html" class="site-nav__icon-btn">
+                    <span class="material-symbols-outlined">favorite</span>
+                </a>
+                <a href="cart.html" class="site-nav__icon-btn">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </a>
+                <button class="site-nav__mobile-toggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="checkout-main">
+        <!-- Page Title -->
+        <div style="margin-bottom: 48px;">
+            <h1 style="font-family: var(--font-serif); font-size: 48px; line-height: 1.1; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">Checkout</h1>
+            <p style="font-size: 16px; color: var(--color-on-surface-variant);">Review your order and complete your conscious purchase.</p>
+        </div>
+
+        <div class="checkout-grid">
+            <!-- Left Column: Shipping Details Form -->
+            <div class="checkout-form-card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 32px; border-bottom: 1px solid var(--color-surface-variant); padding-bottom: 16px;">
+                    <span class="material-symbols-outlined" style="color: var(--color-primary);" data-icon="local_shipping">local_shipping</span>
+                    <h2 style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: var(--color-primary);">Shipping Details</h2>
+                </div>
+                <form style="display: flex; flex-direction: column; gap: 24px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="full_name">Full Name</label>
+                            <input class="checkout-input" id="full_name" placeholder="Alex Rivers" type="text">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="email">Email</label>
+                            <input class="checkout-input" id="email" placeholder="alex@example.com" type="email">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="phone">Phone Number</label>
+                        <input class="checkout-input" id="phone" placeholder="+1 (555) 000-0000" type="tel">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="address">Street Address</label>
+                        <input class="checkout-input" id="address" placeholder="123 Serene Lane" type="text">
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="city">City</label>
+                            <input class="checkout-input" id="city" placeholder="Eco City" type="text">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="state">State</label>
+                            <select class="checkout-input" id="state" style="background-color: var(--color-surface); cursor: pointer;">
+                                <option value="">Select State</option>
+                                <option value="ca">California</option>
+                                <option value="ny">New York</option>
+                                <option value="tx">Texas</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 14px; font-weight: 600; color: var(--color-on-surface);" for="pincode">Pincode</label>
+                            <input class="checkout-input" id="pincode" placeholder="90210" type="text">
+                        </div>
+                    </div>
+                </form>
+
+                <div style="margin-top: 48px; display: flex; flex-direction: column; gap: 24px;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px; border-bottom: 1px solid var(--color-surface-variant); padding-bottom: 16px;">
+                        <span class="material-symbols-outlined" style="color: var(--color-primary);" data-icon="verified_user">verified_user</span>
+                        <h2 style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: var(--color-primary);">Payment Security</h2>
+                    </div>
+                    <div class="checkout-security-grid">
+                        <div class="checkout-security-badge">
+                            <span class="material-symbols-outlined checkout-security-badge__icon icon--fill" data-icon="lock">lock</span>
+                            <span class="checkout-security-badge__text">Secure SSL</span>
+                        </div>
+                        <div class="checkout-security-badge">
+                            <span class="material-symbols-outlined checkout-security-badge__icon icon--fill" data-icon="eco">eco</span>
+                            <span class="checkout-security-badge__text">Eco-Certified</span>
+                        </div>
+                        <div class="checkout-security-badge">
+                            <span class="material-symbols-outlined checkout-security-badge__icon icon--fill" data-icon="shield">shield</span>
+                            <span class="checkout-security-badge__text">Buyer Protection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div style="display: flex; flex-direction: column; gap: 32px;">
+                <div class="checkout-summary-card">
+                    <h2 style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: var(--color-primary); margin-bottom: 32px; border-bottom: 1px solid var(--color-outline-variant); padding-bottom: 16px;">
+                        Order Summary
+                    </h2>
+
+                    <!-- Dynamic Cart Items -->
+                    <div id="orderItems"></div>
+
+                    <!-- Totals -->
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end; padding-top: 16px; border-top: 1px solid rgba(22, 69, 37, 0.2); margin-top: 16px;">
+                        <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: var(--color-primary);">
+                            Total
+                        </span>
+                        <span id="grandTotal" style="font-family: var(--font-serif); font-size: 36px; font-weight: 600; color: var(--color-primary);">
+                            ₹0
+                        </span>
+                    </div>
+                </div>
+                <div class="Checkout">
+                    <a href="checkout.html"><button> Place Order </button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand-col">
+                <a class="site-footer__brand-title" href="#" style="display: block;">AJ Bags</a>
+                <p class="site-footer__brand-desc">Consciously crafted for the modern explorer. Our mission is to merge luxury with radical transparency.</p>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Shop</h4>
+                <a class="site-footer__link" href="#">All Products</a>
+                <a class="site-footer__link" href="#">New Arrivals</a>
+                <a class="site-footer__link" href="#">Recycled Series</a>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Company</h4>
+                <a class="site-footer__link" href="#">Sustainability Report</a>
+                <a class="site-footer__link" href="#">Recycling Program</a>
+                <a class="site-footer__link" href="#">About Us</a>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Support</h4>
+                <a class="site-footer__link" href="#">Shipping &amp; Returns</a>
+                <a class="site-footer__link" href="#">Privacy Policy</a>
+                <a class="site-footer__link" href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p class="site-footer__copyright">© 2024 AJ Bags. Consciously crafted for the modern explorer.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Interaction: Scale button on click
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'scale(0.95)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = 'scale(1)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'scale(1)';
+            });
+        });
+
+        // Input glow effect
+        const inputs = document.querySelectorAll('input, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.style.borderBottomColor = 'var(--color-primary)';
+            });
+            input.addEventListener('blur', () => {
+                input.style.borderBottomColor = '';
+            });
+        });
+
+        function showOrderSummary() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const orderItems = document.getElementById("orderItems");
+            const grandTotal = document.getElementById("grandTotal");
+            let total = 0;
+            if (!orderItems) return;
+            orderItems.innerHTML = "";
+
+            cart.forEach(product => {
+                total += Number(product.price);
+                orderItems.innerHTML += `
+                    <div class="checkout-summary__item">
+                        <div class="checkout-summary__item-info">
+                            <img src="${product.image}" class="checkout-summary__item-img" alt="${product.details}">
+                            <div>
+                                <p class="checkout-summary__item-title">${product.details}</p>
+                            </div>
+                        </div>
+                        <span class="checkout-summary__item-price">₹${product.price}</span>
+                    </div>
+                `;
+            });
+
+            if (grandTotal) {
+                grandTotal.innerText = `₹${total}`;
+            }
+        }
+
+        showOrderSummary();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ij-d-zoro.github.io/project-ajbags/sitemap.xml

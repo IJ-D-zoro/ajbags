@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Your Favorites | AJ Bags</title>
+    <meta name="description" content="View and manage your saved favorite eco-friendly bags at AJ Bags.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://ij-d-zoro.github.io/project-ajbags/favourite.html">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Pure Vanilla Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="ajbags_js.js"></script>
+</head>
+
+<body>
+    <!-- TopNavBar -->
+    <nav class="site-nav">
+        <div class="site-nav__container">
+            <a class="site-nav__logo" href="index.html">AJ Bags</a>
+            <div class="site-nav__links">
+                <a class="site-nav__link" href="index.html">Home</a>
+                <a class="site-nav__link" href="products.html">Products</a>
+                <a class="site-nav__link" href="aboutus.html">About Us</a>
+                <a class="site-nav__link" href="Contacts.html">Contact Us</a>
+            </div>
+            <div class="site-nav__actions">
+                <a href="favourite.html" class="site-nav__icon-btn">
+                    <span class="material-symbols-outlined icon--fill">favorite</span>
+                </a>
+                <a href="cart.html" class="site-nav__icon-btn">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </a>
+                <button class="site-nav__mobile-toggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="favorites-main">
+        <!-- Header Section -->
+        <header class="favorites-header">
+            <div>
+                <h1 class="favorites-header__title">Your Favorites</h1>
+                <p class="favorites-header__subtitle">The pieces you've fallen for. Ready to join your journey.</p>
+            </div>
+            <div class="favorites-header__count">
+                4 Items
+            </div>
+        </header>
+
+        <!-- Main Content: Favorites Grid -->
+        <div class="favorites-grid" id="favorites-grid">
+            <!-- Card 1 -->
+            <div class="favorite-card">
+                <div class="favorite-card__thumb-box">
+                    <img class="product-card__img product-card__img--cover"
+                        data-alt="A premium forest green tote bag made of sustainable materials placed in a bright, airy architectural studio with natural wood textures. The lighting is soft and golden, highlighting the fine grain of the recycled fabric. The overall mood is sophisticated, professional, and tranquil, emphasizing the eco-luxe brand identity of AJ Bags."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRacSy4X8xDnbf41quCeDSRbt8-3B3alUHO39B4ewznz80Txm2g0NJlTqYnmTt4_-o3h3tpPdPcB9lX3N1qs34qPyC0iEIAusJgOPfvCl9S1dtuVS69fLNuJvo3HnsVG8WMNJ-m7yfIq3TyLILeKVpDSQNrBwG8ITZBkua-s4GpzNOez2RDs_Q4vu4O5OoBybFGSKTaTk__sGyi1d5BFZ08dEY3bzkvBJogzBZao5LtrVZbN5x1psw-CkDR9PrMjZ8SBcbOgJ0oCg"
+                        alt="Evergreen Daypack 100% recycled canvas backpack">
+                    <button class="favorite-card__remove-btn" onclick="this.closest('.favorite-card').remove();">
+                        <span class="material-symbols-outlined icon--fill" data-icon="favorite">favorite</span>
+                    </button>
+                    <div style="position: absolute; top: 16px; left: 16px;">
+                        <span class="product-card__badge product-card__badge--secondary">100% Recycled</span>
+                    </div>
+                </div>
+                <div class="favorite-card__content">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                        <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--color-primary); font-weight: 500;">Evergreen Daypack</h3>
+                        <span style="font-weight: 600; color: var(--color-tertiary);">$185</span>
+                    </div>
+                    <p style="color: var(--color-on-surface-variant); font-size: 14px; margin-bottom: 24px; flex-grow: 1;">Crafted for the modern explorer with premium recycled canvas.</p>
+                    <button class="favorite-card__add-btn"
+                        onclick="addtocart('https://lh3.googleusercontent.com/aida-public/AB6AXuDRacSy4X8xDnbf41quCeDSRbt8-3B3alUHO39B4ewznz80Txm2g0NJlTqYnmTt4_-o3h3tpPdPcB9lX3N1qs34qPyC0iEIAusJgOPfvCl9S1dtuVS69fLNuJvo3HnsVG8WMNJ-m7yfIq3TyLILeKVpDSQNrBwG8ITZBkua-s4GpzNOez2RDs_Q4vu4O5OoBybFGSKTaTk__sGyi1d5BFZ08dEY3bzkvBJogzBZao5LtrVZbN5x1psw-CkDR9PrMjZ8SBcbOgJ0oCg','Evergreen Daypack',185)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="favorite-card">
+                <div class="favorite-card__thumb-box">
+                    <img class="product-card__img product-card__img--cover"
+                        data-alt="A high-end, minimalist messenger bag in a rich tobacco brown shade, displayed on a clean oak pedestal within a serene boutique environment. Warm afternoon sunlight streams through a large window, casting soft shadows. The visual style is modern luxury with a focus on tactile organic textures and a palette of warm beiges and earthy greens."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMJyg8IgVGQnskruppm0g_Vfes3PPLUG0uJvfPURoByXqJlnPiGROt5DZdSh0CXgGDTBH1LLt_Y42IfdD3cYO1LdOpEAlARGQCW4Q91Wit_rZqzsGdq75sMx4ZWBe7ls7A4zZUUaZOX9Fk8cQPhIu-GVCf6STX9bczW8Z_7jDwK65bWpMkbjJUKyjiqDxR3Pq5kSXGfH7odKC0eb87XfUvCkbixBk8tnYbOi6JllVFeqUzZllRidei8v0xWP-E4kGE2FbMqUw32pg"
+                        alt="Urban Nomad Tote fair trade messenger tote bag">
+                    <button class="favorite-card__remove-btn" onclick="this.closest('.favorite-card').remove();">
+                        <span class="material-symbols-outlined icon--fill" data-icon="favorite">favorite</span>
+                    </button>
+                    <div style="position: absolute; top: 16px; left: 16px;">
+                        <span class="product-card__badge product-card__badge--secondary">Fair Trade</span>
+                    </div>
+                </div>
+                <div class="favorite-card__content">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                        <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--color-primary); font-weight: 500;">Urban Nomad Tote</h3>
+                        <span style="font-weight: 600; color: var(--color-tertiary);">$240</span>
+                    </div>
+                    <p style="color: var(--color-on-surface-variant); font-size: 14px; margin-bottom: 24px; flex-grow: 1;">A spacious companion for seamless city-to-nature transitions.</p>
+                    <button class="favorite-card__add-btn"
+                        onclick="addtocart('https://lh3.googleusercontent.com/aida-public/AB6AXuDMJyg8IgVGQnskruppm0g_Vfes3PPLUG0uJvfPURoByXqJlnPiGROt5DZdSh0CXgGDTBH1LLt_Y42IfdD3cYO1LdOpEAlARGQCW4Q91Wit_rZqzsGdq75sMx4ZWBe7ls7A4zZUUaZOX9Fk8cQPhIu-GVCf6STX9bczW8Z_7jDwK65bWpMkbjJUKyjiqDxR3Pq5kSXGfH7odKC0eb87XfUvCkbixBk8tnYbOi6JllVFeqUzZllRidei8v0xWP-E4kGE2FbMqUw32pg','Urban Nomad Tote',240)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="favorite-card">
+                <div class="favorite-card__thumb-box">
+                    <img class="product-card__img product-card__img--cover"
+                        data-alt="Close-up of a meticulously crafted olive green shoulder bag with brass hardware, hanging in a bright, minimalist studio. The background features rolled fabrics in sage and cream. The scene is shot with a shallow depth of field, highlighting the premium stitching and sustainable leather details. The atmosphere is quiet, refined, and professional."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNNs46y4DpKQivK6eutANVVHvsOimmmA9W2QDGI7vaIgwdNFRg2D5QqsNqriChBlUod3O-WOWzZ8th_-3FdXFwNTQEQcIkI99_0cBxr1V2Avah_jsbq9zshIJ55_TBwy2sI7NASCKJdo4Ni5XJK0M7PDEc6UMrsyeZafJApHCQzZmQE499geWvXZeZvcw4stxci4oh5ZdOitx1S67vgEUe6zxuZHY0ebuoTlpHopzmRWdG_yTdzxXtLaKxhXGcKFQfaCyNVzDs0n8"
+                        alt="Terra Weekender eco-conscious olive green shoulder bag">
+                    <button class="favorite-card__remove-btn" onclick="this.closest('.favorite-card').remove();">
+                        <span class="material-symbols-outlined icon--fill" data-icon="favorite">favorite</span>
+                    </button>
+                    <div style="position: absolute; top: 16px; left: 16px;">
+                        <span class="product-card__badge product-card__badge--secondary">Eco-Conscious</span>
+                    </div>
+                </div>
+                <div class="favorite-card__content">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                        <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--color-primary); font-weight: 500;">Terra Weekender</h3>
+                        <span style="font-weight: 600; color: var(--color-tertiary);">$310</span>
+                    </div>
+                    <p style="color: var(--color-on-surface-variant); font-size: 14px; margin-bottom: 24px; flex-grow: 1;">Generous proportions meets architectural precision for travels.</p>
+                    <button class="favorite-card__add-btn"
+                        onclick="addtocart('https://lh3.googleusercontent.com/aida-public/AB6AXuBNNs46y4DpKQivK6eutANVVHvsOimmmA9W2QDGI7vaIgwdNFRg2D5QqsNqriChBlUod3O-WOWzZ8th_-3FdXFwNTQEQcIkI99_0cBxr1V2Avah_jsbq9zshIJ55_TBwy2sI7NASCKJdo4Ni5XJK0M7PDEc6UMrsyeZafJApHCQzZmQE499geWvXZeZvcw4stxci4oh5ZdOitx1S67vgEUe6zxuZHY0ebuoTlpHopzmRWdG_yTdzxXtLaKxhXGcKFQfaCyNVzDs0n8','Terra Weekender',310)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="favorite-card">
+                <div class="favorite-card__thumb-box">
+                    <img class="product-card__img product-card__img--cover"
+                        data-alt="A small, elegant crossbody bag in a creamy oat color, styled against a backdrop of indoor plants and light-colored wooden shelves. High-key natural lighting creates a fresh and serene aesthetic. The design reflects a modern minimalist approach with high-end luxury finishing. The palette consists of verdant greens and soft neutral beiges."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA14u_TsodOt5kvdsfNt-x7YkdUvuHiynnNcdjI74sOMrXH9IBXVcSQkW16zy-zDk32co5zzpQ1vXdoN3u2JY6bIFIEyslnFv9w5uude60R0_IQtbj_zKXixzh86yyqDlbAwFAhLj_guHDDQdD3o24cm2VSQW-0-JLZqAfH55S8bj43kyrXFyVjdqyD3Q6UAUL91-K4PYDFZJKpbW5wEvF9Bao0RqEibQnYSDq4L0nafDmALPRDChfEq3DG2tT3KiDS7rF_0qlRm-4"
+                        alt="Bloom Crossbody artisan made cream crossbody bag">
+                    <button class="favorite-card__remove-btn" onclick="this.closest('.favorite-card').remove();">
+                        <span class="material-symbols-outlined icon--fill" data-icon="favorite">favorite</span>
+                    </button>
+                    <div style="position: absolute; top: 16px; left: 16px;">
+                        <span class="product-card__badge product-card__badge--secondary">Artisan Made</span>
+                    </div>
+                </div>
+                <div class="favorite-card__content">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                        <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--color-primary); font-weight: 500;">Bloom Crossbody</h3>
+                        <span style="font-weight: 600; color: var(--color-tertiary);">$125</span>
+                    </div>
+                    <p style="color: var(--color-on-surface-variant); font-size: 14px; margin-bottom: 24px; flex-grow: 1;">Compact elegance for your daily essentials, naturally dyed.</p>
+                    <button class="favorite-card__add-btn"
+                        onclick="addtocart('https://lh3.googleusercontent.com/aida-public/AB6AXuA14u_TsodOt5kvdsfNt-x7YkdUvuHiynnNcdjI74sOMrXH9IBXVcSQkW16zy-zDk32co5zzpQ1vXdoN3u2JY6bIFIEyslnFv9w5uude60R0_IQtbj_zKXixzh86yyqDlbAwFAhLj_guHDDQdD3o24cm2VSQW-0-JLZqAfH55S8bj43kyrXFyVjdqyD3Q6UAUL91-K4PYDFZJKpbW5wEvF9Bao0RqEibQnYSDq4L0nafDmALPRDChfEq3DG2tT3KiDS7rF_0qlRm-4','Bloom Crossbody',125)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State (initially hidden) -->
+        <section class="favorites-empty is-hidden" id="empty-state">
+            <div class="favorites-empty__icon-box">
+                <span class="material-symbols-outlined" style="font-size: 48px;" data-icon="favorite_border">favorite_border</span>
+            </div>
+            <h2 style="font-family: var(--font-serif); font-size: 32px; color: var(--color-primary); margin-bottom: 16px;">Your collection is waiting</h2>
+            <p style="color: var(--color-on-surface-variant); max-width: 384px; margin-bottom: 40px;">Save the pieces you love and we'll keep them here for when you're ready to make them yours.</p>
+            <a class="favorites-empty__cta" href="products.html">
+                Start Shopping
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="margin-top: 80px;">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand-col">
+                <div class="site-footer__brand-title">AJ Bags</div>
+                <p class="site-footer__brand-desc">Crafting premium, sustainable goods for those who care as much about the journey as the destination.</p>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Explore</h4>
+                <a class="site-footer__link" href="#">Materials</a>
+                <a class="site-footer__link" href="#">Sustainability Report</a>
+                <a class="site-footer__link" href="#">Recycling Program</a>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Policy</h4>
+                <a class="site-footer__link" href="#">Privacy Policy</a>
+                <a class="site-footer__link" href="#">Terms of Service</a>
+            </div>
+            <div class="site-footer__col">
+                <h4 class="site-footer__col-title site-footer__col-title--caps">Connect</h4>
+                <div class="site-footer__social-row">
+                    <button class="site-footer__social-btn">
+                        <span class="material-symbols-outlined" style="font-size: 18px;" data-icon="share">share</span>
+                    </button>
+                    <button class="site-footer__social-btn">
+                        <span class="material-symbols-outlined" style="font-size: 18px;" data-icon="mail">mail</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p class="site-footer__copyright">© 2024 AJ Bags. Purposefully Crafted.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Micro-interaction logic for empty state
+        const observer = new MutationObserver(() => {
+            const grid = document.getElementById('favorites-grid');
+            const emptyState = document.getElementById('empty-state');
+            const countLabel = document.querySelector('.favorites-header__count');
+            
+            const itemCount = grid ? grid.children.length : 0;
+            
+            if (itemCount === 0) {
+                if (grid) grid.classList.add('is-hidden');
+                if (emptyState) emptyState.classList.remove('is-hidden');
+                if (countLabel) countLabel.textContent = '0 Items';
+            } else {
+                if (countLabel) countLabel.textContent = `${itemCount} Item${itemCount > 1 ? 's' : ''}`;
+            }
+        });
+
+        const grid = document.getElementById('favorites-grid');
+        if (grid) {
+            observer.observe(grid, { childList: true });
+        }
+    </script>
+</body>
+
+</html>

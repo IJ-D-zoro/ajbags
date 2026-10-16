@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://ij-d-zoro.github.io/project-ajbags/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://ij-d-zoro.github.io/project-ajbags/products.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bag Manufacturer & Wholesale Landing -->
+  <url>
+    <loc>https://ij-d-zoro.github.io/project-ajbags/landing.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://ij-d-zoro.github.io/project-ajbags/aboutus.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Us -->
+  <url>
+    <loc>https://ij-d-zoro.github.io/project-ajbags/Contacts.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
